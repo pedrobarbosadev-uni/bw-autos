@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BW Autos — Concessionária premium de veículos esportivos e de luxo."
+    />
+    <title>BW Autos — Velocidade com Elegância</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════ LOADER ═══════════════════════════════ -->
+    <div id="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">BW</div>
+        <div class="loader-bar"><span></span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════ CURSOR ═══════════════════════════════ -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- ═══════════════════════════════ HEADER ══════════════════════════════ -->
+    <header id="header">
+      <nav class="nav container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bw">BW</span><span class="logo-autos">AUTOS</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#veiculos" class="nav-link">Veículos</a></li>
+          <li><a href="#beneficios" class="nav-link">Diferenciais</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+          <li>
+            <a href="#contato" class="nav-link nav-cta">Agendar Test Drive</a>
+          </li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+
+      <div class="hero-car-track">
+        <div class="hero-car" id="hero-car">
+          <!-- SVG Car Silhouette -->
+          <svg
+            viewBox="0 0 900 340"
+            xmlns="http://www.w3.org/2000/svg"
+            class="car-svg"
+          >
+            <!-- Body -->
+            <ellipse
+              cx="450"
+              cy="270"
+              rx="370"
+              ry="22"
+              fill="rgba(220,38,38,0.18)"
+            />
+            <!-- Main body -->
+            <path
+              d="M80 230 Q100 230 120 220 L200 180 Q260 130 340 118 L480 110 Q570 108 630 120 L720 150 Q760 168 790 200 L820 230 Q830 240 820 248 L790 252 Q770 272 720 272 L180 272 Q130 272 110 252 L80 248 Q70 240 80 230Z"
+              fill="#1a1a1a"
+              stroke="#dc2626"
+              stroke-width="1.5"
+            />
+            <!-- Roof -->
+            <path
+              d="M230 180 Q270 130 340 118 L480 110 Q560 108 615 122 L680 150 Q650 152 580 148 L400 148 Q310 150 260 180Z"
+              fill="#111"
+              stroke="#dc2626"
+              stroke-width="1"
+            />
+            <!-- Windshield -->
+            <path
+              d="M258 178 Q285 140 340 122 L460 116 Q500 115 530 120 L590 148 L390 148Z"
+              fill="rgba(100,160,255,0.12)"
+              stroke="rgba(100,160,255,0.3)"
+              stroke-width="1"
+            />
+            <!-- Rear window -->
+            <path
+              d="M598 150 L660 152 Q695 160 715 178 L620 178Z"
+              fill="rgba(100,160,255,0.10)"
+              stroke="rgba(100,160,255,0.25)"
+              stroke-width="1"
+            />
+            <!-- Door lines -->
+            <line
+              x1="380"
+              y1="148"
+              x2="370"
+              y2="252"
+              stroke="#333"
+              stroke-width="1"
+            />
+            <line
+              x1="530"
+              y1="146"
+              x2="540"
+              y2="252"
+              stroke="#333"
+              stroke-width="1"
+            />
+            <!-- Front wheel arch -->
+            <path
+              d="M110 252 Q100 230 120 220 L190 210 Q220 208 240 222 L250 252Z"
+              fill="#0d0d0d"
+              stroke="#dc2626"
+              stroke-width="1"
+            />
+            <!-- Rear wheel arch -->
+            <path
+              d="M650 252 Q660 210 700 204 L760 204 Q800 208 820 232 L820 252Z"
+              fill="#0d0d0d"
+              stroke="#dc2626"
+              stroke-width="1"
+            />
+            <!-- Front wheel -->
+            <circle
+              cx="190"
+              cy="268"
+              r="38"
+              fill="#111"
+              stroke="#444"
+              stroke-width="3"
+            />
+            <circle
+              cx="190"
+              cy="268"
+              r="24"
+              fill="#0d0d0d"
+              stroke="#666"
+              stroke-width="2"
+            />
+            <circle cx="190" cy="268" r="10" fill="#dc2626" />
+            <!-- Rear wheel -->
+            <circle
+              cx="720"
+              cy="268"
+              r="38"
+              fill="#111"
+              stroke="#444"
+              stroke-width="3"
+            />
+            <circle
+              cx="720"
+              cy="268"
+              r="24"
+              fill="#0d0d0d"
+              stroke="#666"
+              stroke-width="2"
+            />
+            <circle cx="720" cy="268" r="10" fill="#dc2626" />
+            <!-- Headlight -->
+            <path
+              d="M82 226 Q88 218 104 216 L130 216 Q128 224 120 228 L84 230Z"
+              fill="rgba(255,220,80,0.6)"
+              stroke="#dc2626"
+              stroke-width="1"
+            />
+            <!-- Taillight -->
+            <path
+              d="M818 228 Q826 220 824 216 L800 218 Q800 224 808 228Z"
+              fill="rgba(220,38,38,0.9)"
+              stroke="#dc2626"
+              stroke-width="1"
+            />
+            <!-- Rim spokes front -->
+            <line
+              x1="190"
+              y1="244"
+              x2="190"
+              y2="292"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="166"
+              y1="250"
+              x2="214"
+              y2="286"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="166"
+              y1="286"
+              x2="214"
+              y2="250"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="162"
+              y1="268"
+              x2="218"
+              y2="268"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <!-- Rim spokes rear -->
+            <line
+              x1="720"
+              y1="244"
+              x2="720"
+              y2="292"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="696"
+              y1="250"
+              x2="744"
+              y2="286"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="696"
+              y1="286"
+              x2="744"
+              y2="250"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <line
+              x1="692"
+              y1="268"
+              x2="748"
+              y2="268"
+              stroke="#888"
+              stroke-width="2"
+            />
+            <!-- Front bumper detail -->
+            <path
+              d="M80 232 L82 248 Q88 255 110 256 L110 252"
+              fill="none"
+              stroke="#dc2626"
+              stroke-width="1.5"
+            />
+            <!-- Rear bumper detail -->
+            <path
+              d="M820 232 L818 248 Q812 255 790 256 L790 252"
+              fill="none"
+              stroke="#dc2626"
+              stroke-width="1.5"
+            />
+            <!-- Exhaust -->
+            <rect
+              x="792"
+              y="258"
+              width="22"
+              height="6"
+              rx="3"
+              fill="#222"
+              stroke="#555"
+              stroke-width="1"
+            />
+            <rect
+              x="808"
+              y="258"
+              width="10"
+              height="6"
+              rx="3"
+              fill="#222"
+              stroke="#555"
+              stroke-width="1"
+            />
+            <!-- Side stripe -->
+            <line
+              x1="120"
+              y1="218"
+              x2="790"
+              y2="204"
+              stroke="rgba(220,38,38,0.4)"
+              stroke-width="1"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-tag" data-reveal>Performance Redefinida</div>
+        <h1 class="hero-title" data-reveal>
+          <span class="title-line">ACELERE</span>
+          <span class="title-line accent">O IMPOSSÍVEL</span>
+        </h1>
+        <p class="hero-sub" data-reveal>
+          Onde engenharia de ponta encontra design sem compromissos.<br />
+          Bem-vindo ao universo BW Autos.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a href="#veiculos" class="btn btn-primary">Ver Veículos</a>
+          <a href="#contato" class="btn btn-ghost">Agendar Test Drive</a>
+        </div>
+
+        <div class="hero-stats" data-reveal>
+          <div class="stat">
+            <span class="stat-num" data-count="320">0</span
+            ><span class="stat-unit">km/h</span>
+            <span class="stat-label">Velocidade Máx.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span
+            ><span class="stat-unit">seg</span>
+            <span class="stat-label">0 a 100</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="500">0</span
+            ><span class="stat-unit">cv</span>
+            <span class="stat-label">Potência</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ SOBRE ════════════════════════════════ -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-visual" data-reveal="left">
+            <div class="sobre-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80&auto=format&fit=crop"
+                alt="Interior premium de carro de luxo"
+                loading="lazy"
+              />
+              <div class="sobre-img-overlay"></div>
+            </div>
+            <div class="sobre-badge">
+              <span class="badge-num">15+</span>
+              <span class="badge-text">Anos de Excelência</span>
+            </div>
+          </div>
+
+          <div class="sobre-text" data-reveal="right">
+            <p class="section-tag">Sobre Nós</p>
+            <h2 class="section-title">
+              Uma Obsessão<br />Por <span class="accent">Perfeição</span>
+            </h2>
+            <p class="sobre-desc">
+              A BW Autos nasceu da paixão por máquinas extraordinárias. Desde
+              2009, curadoria rigorosa de veículos premium — cada carro
+              selecionado com um único critério: ser absolutamente excepcional.
+            </p>
+            <p class="sobre-desc">
+              Nosso showroom é um templo automotivo. Aqui você não apenas compra
+              um carro — você entra para uma experiência que transforma a forma
+              como você percebe a condução.
+            </p>
+            <div class="sobre-features">
+              <div class="feature-item">
+                <span class="feature-icon">◈</span>
+                <span>Curadoria exclusiva de modelos</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">◈</span>
+                <span>Financiamento sob medida</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">◈</span>
+                <span>Revisões certificadas</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">◈</span>
+                <span>Suporte pós-venda vitalício</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ VEÍCULOS ════════════════════════════════ -->
+    <section id="veiculos" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-tag">Nossa Frota</p>
+          <h2 class="section-title">
+            Veículos em <span class="accent">Destaque</span>
+          </h2>
+          <p class="section-sub">
+            Cada modelo selecionado para dominar sua categoria.
+          </p>
+        </div>
+
+        <div class="cars-filter" data-reveal>
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="sport">Esportivos</button>
+          <button class="filter-btn" data-filter="luxury">Luxo</button>
+          <button class="filter-btn" data-filter="electric">Elétricos</button>
+        </div>
+
+        <div class="cars-grid" id="cars-grid">
+          <div class="car-card" data-category="sport" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=700&q=80&auto=format&fit=crop"
+                alt="Porsche 911 GT3"
+                loading="lazy"
+              />
+              <div class="car-badge sport">Esportivo</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">Porsche</p>
+                  <h3 class="car-name">911 GT3 RS</h3>
+                </div>
+                <p class="car-price">R$ 1.890.000</p>
+              </div>
+              <div class="car-specs">
+                <span>525 cv</span>
+                <span class="sep">|</span>
+                <span>3.8s / 100</span>
+                <span class="sep">|</span>
+                <span>296 km/h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card featured" data-category="luxury" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=80&auto=format&fit=crop"
+                alt="Lamborghini Huracán"
+                loading="lazy"
+              />
+              <div class="car-badge luxury">Luxo</div>
+              <div class="car-tag-featured">⚡ DESTAQUE</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">Lamborghini</p>
+                  <h3 class="car-name">Huracán EVO</h3>
+                </div>
+                <p class="car-price">R$ 3.200.000</p>
+              </div>
+              <div class="car-specs">
+                <span>640 cv</span>
+                <span class="sep">|</span>
+                <span>2.9s / 100</span>
+                <span class="sep">|</span>
+                <span>325 km/h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card" data-category="electric" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=700&q=80&auto=format&fit=crop"
+                alt="Tesla Model S Plaid"
+                loading="lazy"
+              />
+              <div class="car-badge electric">Elétrico</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">Tesla</p>
+                  <h3 class="car-name">Model S Plaid</h3>
+                </div>
+                <p class="car-price">R$ 950.000</p>
+              </div>
+              <div class="car-specs">
+                <span>1.020 cv</span>
+                <span class="sep">|</span>
+                <span>1.99s / 100</span>
+                <span class="sep">|</span>
+                <span>322 km/h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card" data-category="luxury" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=700&q=80&auto=format&fit=crop"
+                alt="Ferrari Roma"
+                loading="lazy"
+              />
+              <div class="car-badge luxury">Luxo</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">Ferrari</p>
+                  <h3 class="car-name">Roma Spider</h3>
+                </div>
+                <p class="car-price">R$ 2.750.000</p>
+              </div>
+              <div class="car-specs">
+                <span>620 cv</span>
+                <span class="sep">|</span>
+                <span>3.4s / 100</span>
+                <span class="sep">|</span>
+                <span>320 km/h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card" data-category="sport" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700&q=80&auto=format&fit=crop"
+                alt="BMW M4 Competition"
+                loading="lazy"
+              />
+              <div class="car-badge sport">Esportivo</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">BMW</p>
+                  <h3 class="car-name">M4 Competition</h3>
+                </div>
+                <p class="car-price">R$ 720.000</p>
+              </div>
+              <div class="car-specs">
+                <span>510 cv</span>
+                <span class="sep">|</span>
+                <span>3.9s / 100</span>
+                <span class="sep">|</span>
+                <span>290 km/h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card" data-category="electric" data-reveal>
+            <div class="car-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=700&q=80&auto=format&fit=crop"
+                alt="Porsche Taycan Turbo S"
+                loading="lazy"
+              />
+              <div class="car-badge electric">Elétrico</div>
+              <div class="car-hover-overlay">
+                <a href="#contato" class="btn btn-primary btn-sm"
+                  >Solicitar Proposta</a
+                >
+              </div>
+            </div>
+            <div class="car-info">
+              <div class="car-top">
+                <div>
+                  <p class="car-brand">Porsche</p>
+                  <h3 class="car-name">Taycan Turbo S</h3>
+                </div>
+                <p class="car-price">R$ 1.480.000</p>
+              </div>
+              <div class="car-specs">
+                <span>761 cv</span>
+                <span class="sep">|</span>
+                <span>2.8s / 100</span>
+                <span class="sep">|</span>
+                <span>260 km/h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cars-cta" data-reveal>
+          <a href="#contato" class="btn btn-outline">Ver Catálogo Completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ BENEFÍCIOS ══════════════════════════════ -->
+    <section id="beneficios" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-tag">Por que BW Autos</p>
+          <h2 class="section-title">
+            Além do <span class="accent">Carro</span>
+          </h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M16 24l6 6 10-12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">Garantia Premium</h3>
+            <p class="benefit-desc">
+              3 anos de garantia total em todos os veículos. Zero surpresas, só
+              performance.
+            </p>
+          </div>
+
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 6L8 14v12c0 9 6.8 17.4 16 19.6C33.2 43.4 40 35 40 26V14L24 6z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 24l4 4 8-8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">Revisão Certificada</h3>
+            <p class="benefit-desc">
+              Cada veículo passa por inspeção de 120 pontos antes de entrar no
+              nosso showroom.
+            </p>
+          </div>
+
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="6"
+                  y="12"
+                  width="36"
+                  height="26"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path d="M6 20h36" stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M14 28h8M14 33h5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">Financiamento Exclusivo</h3>
+            <p class="benefit-desc">
+              Taxas diferenciadas e planos sob medida. Parcelamento inteligente
+              para você.
+            </p>
+          </div>
+
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="24"
+                  cy="20"
+                  r="8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">Atendimento VIP</h3>
+            <p class="benefit-desc">
+              Consultor dedicado para cada cliente. Experiência personalizada do
+              início ao fim.
+            </p>
+          </div>
+
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40 24c0 8.837-7.163 16-16 16S8 32.837 8 24 15.163 8 24 8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M32 8l8 8-8 8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">Test Drive Exclusivo</h3>
+            <p class="benefit-desc">
+              Agende seu test drive e sinta a diferença antes de decidir. Sem
+              pressão.
+            </p>
+          </div>
+
+          <div class="benefit-card" data-reveal>
+            <div class="benefit-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 6l4.5 9.1 10.1 1.5-7.3 7.1 1.7 10-9-4.7-9 4.7 1.7-10-7.3-7.1 10.1-1.5L24 6z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit-title">+500 Clientes Satisfeitos</h3>
+            <p class="benefit-desc">
+              Reputação construída na confiança. 98% de satisfação em avaliações
+              verificadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ BAND / STATS ═══════════════════════════════ -->
+    <section class="band">
+      <div class="band-track">
+        <span>PERFORMANCE</span><span class="dot">●</span> <span>LUXO</span
+        ><span class="dot">●</span> <span>VELOCIDADE</span
+        ><span class="dot">●</span> <span>ELEGÂNCIA</span
+        ><span class="dot">●</span> <span>TECNOLOGIA</span
+        ><span class="dot">●</span> <span>EXCLUSIVIDADE</span
+        ><span class="dot">●</span> <span>PERFORMANCE</span
+        ><span class="dot">●</span> <span>LUXO</span><span class="dot">●</span>
+        <span>VELOCIDADE</span><span class="dot">●</span> <span>ELEGÂNCIA</span
+        ><span class="dot">●</span> <span>TECNOLOGIA</span
+        ><span class="dot">●</span> <span>EXCLUSIVIDADE</span
+        ><span class="dot">●</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTATO ══════════════════════════════════ -->
+    <section id="contato" class="section section-dark">
+      <div class="container">
+        <div class="contato-grid">
+          <div class="contato-info" data-reveal="left">
+            <p class="section-tag">Fale Conosco</p>
+            <h2 class="section-title">
+              Pronto para<br /><span class="accent">Acelerar?</span>
+            </h2>
+            <p class="contato-desc">
+              Nossa equipe está pronta para encontrar o veículo perfeito para
+              você. Entre em contato e agende sua visita ao showroom.
+            </p>
+            <div class="contato-details">
+              <div class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Endereço</strong>
+                  <span>Av. das Nações Unidas, 1500 — São Paulo, SP</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Telefone</strong>
+                  <span>(11) 99999-8888</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <strong>E-mail</strong>
+                  <span>contato@bwautos.com.br</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-form-wrap" data-reveal="right">
+            <form class="contato-form" id="contato-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">Nome completo</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="interesse">Interesse</label>
+                <select id="interesse" name="interesse">
+                  <option value="">Selecione um veículo ou serviço</option>
+                  <option>Porsche 911 GT3 RS</option>
+                  <option>Lamborghini Huracán EVO</option>
+                  <option>Tesla Model S Plaid</option>
+                  <option>Ferrari Roma Spider</option>
+                  <option>BMW M4 Competition</option>
+                  <option>Porsche Taycan Turbo S</option>
+                  <option>Outro / Consulta geral</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  placeholder="Como podemos te ajudar?"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Enviar Mensagem</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <div class="form-success" id="form-success">
+                ✓ Mensagem enviada! Em breve entraremos em contato.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ FOOTER ════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="nav-logo">
+              <span class="logo-bw">BW</span
+              ><span class="logo-autos">AUTOS</span>
+            </a>
+            <p>Velocidade com Elegância. Sua jornada começa aqui.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#veiculos">Veículos</a></li>
+              <li><a href="#beneficios">Diferenciais</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Veículos</h4>
+            <ul>
+              <li><a href="#veiculos">Esportivos</a></li>
+              <li><a href="#veiculos">Luxo</a></li>
+              <li><a href="#veiculos">Elétricos</a></li>
+              <li><a href="#contato">Seminovos Premium</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Horário</h4>
+            <ul>
+              <li>Seg – Sex: 9h às 19h</li>
+              <li>Sábado: 9h às 17h</li>
+              <li>Domingo: 10h às 14h</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2024 BW Autos. Todos os direitos reservados.</p>
+          <p>Desenvolvido com ♥ para apaixonados por automóveis.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-top" aria-label="Voltar ao topo">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
